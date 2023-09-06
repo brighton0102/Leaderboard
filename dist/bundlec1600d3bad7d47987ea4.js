@@ -20,8 +20,61 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.title-container {
+  display: flex;
+}
+
+.refresh-btn {
+  margin-left: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.scores {
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+#input-form {
+  margin-top: 20px;
+}
+
+.scores p {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+input {
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  margin-left: 122px;
+}`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAEA;EACE,kCAAA;EACA,sBAAA;EACA,UAAA;EACA,SAAA;AAAF;;AAGA;EACE,iBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,eAAA;AAAF;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,iBAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;EACA,SAAA;EACA,gBAAA;AAAF;;AAGA;EACE,uBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,gBAAA;AAAF;;AAGA;EACE,8BAAA;EACA,YAAA;AAAF;;AAGA;EACE,YAAA;EACA,mBAAA;AAAF;;AAGA;EACE,kBAAA;AAAF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\r\n\r\n* {\r\n  font-family: 'Poppins', sans-serif;\r\n  box-sizing: border-box;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.main-container {\r\n  margin-left: 70px;\r\n  margin-top: 50px;\r\n}\r\n\r\n.title {\r\n  font-size: 50px;\r\n}\r\n\r\n.title-container {\r\n  display: flex;\r\n}\r\n\r\n.refresh-btn {\r\n  margin-left: 20px;\r\n}\r\n\r\n.container {\r\n  display: grid;\r\n  grid-template-columns: 1fr 2fr;\r\n  gap: 20px;\r\n  margin-top: 30px;\r\n}\r\n\r\n.scores {\r\n  border: 1px solid black;\r\n  margin-top: 20px;\r\n}\r\n\r\n#input-form {\r\n  margin-top: 20px;\r\n}\r\n\r\n.scores p {\r\n  border-bottom: 1px solid black;\r\n  padding: 5px;\r\n}\r\n\r\ninput {\r\n  padding: 3px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.submit-btn {\r\n  margin-left: 122px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -554,4 +607,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlefd9f2b14f08f753feb26.js.map
+//# sourceMappingURL=bundlec1600d3bad7d47987ea4.js.map
