@@ -36,7 +36,7 @@
   margin-top: 20px;
 }
 
-#input-form {
+.input-form {
   margin-top: 20px;
 }
 
@@ -52,4 +52,8 @@ input {
 
 .submit-btn {
   margin-left: 122px;
+}
+
+.score-item {
+  list-style-type: none;
 }

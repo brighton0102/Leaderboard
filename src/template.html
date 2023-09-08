@@ -7,44 +7,41 @@
   </head>
   <body>
     <section class="main-container">
-        <h1 class="title">Leaderboard</h1>
+      <h1 class="title">Leaderboard</h1>
 
-        <div class="container">
-            <div class="recent-scores">
-                <div class="title-container">
-                    <h3>Recent scores</h3>
-                    <button class="refresh-btn">Refresh</button>
-                </div>
-                <div class="scores">
-                  <p>Name: 100</p>
-                  <p>Name: 100</p>
-                  <p>Name: 100</p>
-                  <p>Name: 100</p>
-                  <p>Name: 100</p>
-                </div>
-              </div>
-        
-              <div class="add-score">
-                <h3>Add your score</h3>
-                <form action="" id="input-form">
-                    <input
-                     type="text"
-                     name="text"
-                     placeholder="Your Name"
-                     required
-                    />
-                    <br />
-                    <input
-                     type="text"
-                     name="text"
-                     placeholder="Your score" 
-                     />
-                     <br />
-                    <button class="submit-btn">Submit</button>
-                </form>
-              </div>
+      <div class="container">
+        <div class="recent-scores">
+          <div class="title-container">
+            <h3>Recent scores</h3>
+            <button class="refresh-btn">Refresh</button>
+          </div>
+          <div class="scores">
+            <ul class="list"></ul>
+          </div>
         </div>
-      
+
+        <div class="add-score">
+          <h3>Add your score</h3>
+          <form action="" class="form">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              id="name"
+              required
+            />
+            <br />
+            <input
+              type="text"
+              name="score"
+              placeholder="Your score"
+              id="score"
+            />
+            <br />
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
     </section>
   </body>
 </html>
