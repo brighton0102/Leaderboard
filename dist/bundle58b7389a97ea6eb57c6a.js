@@ -16,11 +16,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/img/pexels-photo-326333.jpeg */ "./src/img/pexels-photo-326333.jpeg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `* {
   font-family: "Poppins", sans-serif;
@@ -29,56 +34,107 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
   margin: 0;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(0, 14, 208, 0.8), rgba(23, 60, 255, 0.8)), url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .main-container {
-  margin-left: 70px;
+  margin-left: 300px;
   margin-top: 50px;
 }
 
 .title {
   font-size: 50px;
+  color: rgb(99, 58, 58);
 }
 
 .title-container {
   display: flex;
 }
 
+.title-container h3 {
+  font-size: 25px;
+  color: rgb(99, 58, 58);
+}
+
 .refresh-btn {
   margin-left: 20px;
+  border: 1px solid rgb(99, 58, 58);
+  color: rgb(99, 58, 58);
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58);
+}
+
+.refresh-btn:hover {
+  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58), 0 0 50px rgb(99, 58, 58), 0 0 100px rgb(99, 58, 58), 0 0 200px rgb(99, 58, 58);
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
   margin-top: 30px;
 }
 
 .scores {
-  border: 1px solid black;
+  border: 3px solid rgb(99, 58, 58);
   margin-top: 20px;
+  color: rgb(99, 58, 58);
+}
+
+.score-item {
+  list-style-type: none;
+  border-bottom: 1px solid rgb(99, 58, 58);
+  padding: 10px;
+}
+
+.add-score h3 {
+  font-size: 25px;
+  color: rgb(99, 58, 58);
+  margin-bottom: 25px;
 }
 
 .input-form {
   margin-top: 20px;
 }
 
-.scores p {
-  border-bottom: 1px solid black;
-  padding: 5px;
-}
-
 input {
-  padding: 3px;
+  padding: 10px;
   margin-bottom: 10px;
+  background-color: transparent;
+  color: rgb(99, 58, 58);
+  border: 2px solid rgb(99, 58, 58);
+  font-size: 20px;
 }
 
 .submit-btn {
-  margin-left: 122px;
+  margin-left: 163px;
+  border: 1px solid rgb(99, 58, 58);
+  color: rgb(99, 58, 58);
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58);
 }
 
-.score-item {
-  list-style-type: none;
-}`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAEA;EACE,kCAAA;EACA,sBAAA;EACA,UAAA;EACA,SAAA;AAAF;;AAGA;EACE,iBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,eAAA;AAAF;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,iBAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;EACA,SAAA;EACA,gBAAA;AAAF;;AAGA;EACE,uBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,gBAAA;AAAF;;AAGA;EACE,8BAAA;EACA,YAAA;AAAF;;AAGA;EACE,YAAA;EACA,mBAAA;AAAF;;AAGA;EACE,kBAAA;AAAF;;AAGA;EACE,qBAAA;AAAF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\r\n\r\n* {\r\n  font-family: 'Poppins', sans-serif;\r\n  box-sizing: border-box;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.main-container {\r\n  margin-left: 70px;\r\n  margin-top: 50px;\r\n}\r\n\r\n.title {\r\n  font-size: 50px;\r\n}\r\n\r\n.title-container {\r\n  display: flex;\r\n}\r\n\r\n.refresh-btn {\r\n  margin-left: 20px;\r\n}\r\n\r\n.container {\r\n  display: grid;\r\n  grid-template-columns: 1fr 2fr;\r\n  gap: 20px;\r\n  margin-top: 30px;\r\n}\r\n\r\n.scores {\r\n  border: 1px solid black;\r\n  margin-top: 20px;\r\n}\r\n\r\n.input-form {\r\n  margin-top: 20px;\r\n}\r\n\r\n.scores p {\r\n  border-bottom: 1px solid black;\r\n  padding: 5px;\r\n}\r\n\r\ninput {\r\n  padding: 3px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.submit-btn {\r\n  margin-left: 122px;\r\n}\r\n\r\n.score-item {\r\n  list-style-type: none;\r\n}\r\n"],"sourceRoot":""}]);
+.submit-btn:hover {
+  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58), 0 0 50px rgb(99, 58, 58), 0 0 100px rgb(99, 58, 58), 0 0 200px rgb(99, 58, 58);
+}`, "",{"version":3,"sources":["webpack://./src/styles/main.css"],"names":[],"mappings":"AAEA;EACE,kCAAA;EACA,sBAAA;EACA,UAAA;EACA,SAAA;AAAF;;AAGA;EACE,WAAA;EACA,aAAA;EACA,0HAAA;EACA,sBAAA;EACA,2BAAA;EACA,4BAAA;AAAF;;AAGA;EACE,kBAAA;EACA,gBAAA;AAAF;;AAGA;EACE,eAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,eAAA;EACA,sBAAA;AAAF;;AAGA;EACE,iBAAA;EACA,iCAAA;EACA,sBAAA;EACA,iBAAA;EACA,kBAAA;EACA,qBAAA;EACA,qBAAA;EACA,eAAA;EACA,6BAAA;EACA,eAAA;EACA,6DAAA;AAAF;;AAGA;EACE,6IAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;EACA,SAAA;EACA,gBAAA;AAAF;;AAGA;EACE,iCAAA;EACA,gBAAA;EACA,sBAAA;AAAF;;AAGA;EACE,qBAAA;EACA,wCAAA;EACA,aAAA;AAAF;;AAGA;EACE,eAAA;EACA,sBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,gBAAA;AAAF;;AAGA;EACE,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,sBAAA;EACA,iCAAA;EACA,eAAA;AAAF;;AAGA;EACE,kBAAA;EACA,iCAAA;EACA,sBAAA;EACA,iBAAA;EACA,kBAAA;EACA,qBAAA;EACA,qBAAA;EACA,eAAA;EACA,6BAAA;EACA,eAAA;EACA,6DAAA;AAAF;;AAGA;EACE,6IAAA;AAAF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\r\n\r\n* {\r\n  font-family: 'Poppins', sans-serif;\r\n  box-sizing: border-box;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 100vh;\r\n  background: linear-gradient(45deg, rgba(0, 14, 208, 0.8), rgba(23, 60, 255, 0.8)), url(/src/img/pexels-photo-326333.jpeg);\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n}\r\n\r\n.main-container {\r\n  margin-left: 300px;\r\n  margin-top: 50px;\r\n}\r\n\r\n.title {\r\n  font-size: 50px;\r\n  color: rgb(99, 58, 58);\r\n}\r\n\r\n.title-container {\r\n  display: flex;\r\n}\r\n\r\n.title-container h3 {\r\n  font-size: 25px;\r\n  color: rgb(99, 58, 58);\r\n}\r\n\r\n.refresh-btn {\r\n  margin-left: 20px;\r\n  border: 1px solid rgb(99, 58, 58);\r\n  color: rgb(99, 58, 58);\r\n  padding: 9px 20px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  font-size: 16px;\r\n  background-color: transparent;\r\n  cursor: pointer;\r\n  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58);\r\n}\r\n\r\n.refresh-btn:hover {\r\n  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58), 0 0 50px rgb(99, 58, 58), 0 0 100px rgb(99, 58, 58), 0 0 200px rgb(99, 58, 58);\r\n}\r\n\r\n.container {\r\n  display: grid;\r\n  grid-template-columns: 3fr 2fr;\r\n  gap: 40px;\r\n  margin-top: 30px;\r\n}\r\n\r\n.scores {\r\n  border: 3px solid rgb(99, 58, 58);\r\n  margin-top: 20px;\r\n  color: rgb(99, 58, 58);\r\n}\r\n\r\n.score-item {\r\n  list-style-type: none;\r\n  border-bottom: 1px solid rgb(99, 58, 58);\r\n  padding: 10px;\r\n}\r\n\r\n.add-score h3 {\r\n  font-size: 25px;\r\n  color: rgb(99, 58, 58);\r\n  margin-bottom: 25px;\r\n}\r\n\r\n.input-form {\r\n  margin-top: 20px;\r\n}\r\n\r\ninput {\r\n  padding: 10px;\r\n  margin-bottom: 10px;\r\n  background-color: transparent;\r\n  color: rgb(99, 58, 58);\r\n  border: 2px solid rgb(99, 58, 58);\r\n  font-size: 20px;\r\n}\r\n\r\n.submit-btn {\r\n  margin-left: 163px;\r\n  border: 1px solid rgb(99, 58, 58);\r\n  color: rgb(99, 58, 58);\r\n  padding: 9px 20px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  font-size: 20px;\r\n  background-color: transparent;\r\n  cursor: pointer;\r\n  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58);\r\n}\r\n\r\n.submit-btn:hover {\r\n  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58), 0 0 50px rgb(99, 58, 58), 0 0 100px rgb(99, 58, 58), 0 0 200px rgb(99, 58, 58);\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -175,6 +231,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -631,6 +722,16 @@ class Score {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Score);
 
+/***/ }),
+
+/***/ "./src/img/pexels-photo-326333.jpeg":
+/*!******************************************!*\
+  !*** ./src/img/pexels-photo-326333.jpeg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "pexels-photo-326333.jpeg";
+
 /***/ })
 
 /******/ 	});
@@ -659,6 +760,9 @@ class Score {
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -684,6 +788,18 @@ class Score {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -698,6 +814,55 @@ class Score {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"bundle": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -732,4 +897,4 @@ window.onload = () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlea12fa4e145bfc0e92dd7.js.map
+//# sourceMappingURL=bundle58b7389a97ea6eb57c6a.js.map

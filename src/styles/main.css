@@ -7,53 +7,104 @@
   margin: 0;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(0, 14, 208, 0.8), rgba(23, 60, 255, 0.8)), url(/src/img/pexels-photo-326333.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .main-container {
-  margin-left: 70px;
+  margin-left: 300px;
   margin-top: 50px;
 }
 
 .title {
   font-size: 50px;
+  color: rgb(99, 58, 58);
 }
 
 .title-container {
   display: flex;
 }
 
+.title-container h3 {
+  font-size: 25px;
+  color: rgb(99, 58, 58);
+}
+
 .refresh-btn {
   margin-left: 20px;
+  border: 1px solid rgb(99, 58, 58);
+  color: rgb(99, 58, 58);
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58);
+}
+
+.refresh-btn:hover {
+  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58), 0 0 50px rgb(99, 58, 58), 0 0 100px rgb(99, 58, 58), 0 0 200px rgb(99, 58, 58);
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
   margin-top: 30px;
 }
 
 .scores {
-  border: 1px solid black;
+  border: 3px solid rgb(99, 58, 58);
   margin-top: 20px;
+  color: rgb(99, 58, 58);
+}
+
+.score-item {
+  list-style-type: none;
+  border-bottom: 1px solid rgb(99, 58, 58);
+  padding: 10px;
+}
+
+.add-score h3 {
+  font-size: 25px;
+  color: rgb(99, 58, 58);
+  margin-bottom: 25px;
 }
 
 .input-form {
   margin-top: 20px;
 }
 
-.scores p {
-  border-bottom: 1px solid black;
-  padding: 5px;
-}
-
 input {
-  padding: 3px;
+  padding: 10px;
   margin-bottom: 10px;
+  background-color: transparent;
+  color: rgb(99, 58, 58);
+  border: 2px solid rgb(99, 58, 58);
+  font-size: 20px;
 }
 
 .submit-btn {
-  margin-left: 122px;
+  margin-left: 163px;
+  border: 1px solid rgb(99, 58, 58);
+  color: rgb(99, 58, 58);
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58);
 }
 
-.score-item {
-  list-style-type: none;
+.submit-btn:hover {
+  box-shadow: 0 0 5px rgb(99, 58, 58), 0 0 25px rgb(99, 58, 58), 0 0 50px rgb(99, 58, 58), 0 0 100px rgb(99, 58, 58), 0 0 200px rgb(99, 58, 58);
 }
